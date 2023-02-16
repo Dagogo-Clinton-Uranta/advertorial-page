@@ -1,0 +1,240 @@
+#solution {
+    background-color: var(--color-white);
+    padding-top:7%;
+    padding-bottom:17%;
+    margin-bottom: 15%;
+}
+
+
+.solution__container {
+    display:grid;
+    grid-template-columns: 100%; 
+    gap:2%;
+    margin-bottom: 15%;
+
+}
+
+.quarrelImg {
+   margin-left: 0%; /*just a small shift so the img can be in line with the rest of the doc*/
+}
+
+
+.solution__cards {
+    display:flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+    gap: 6.5rem;
+   
+
+}
+
+.solution__message {
+   
+    flex:1;
+    font-size:1.5rem;
+    color:var(--color-black);
+    
+    text-align:left;
+    padding: 1rem;
+    
+   
+}
+
+
+
+.solution__title{
+    
+    font-size:38px;
+    margin-bottom: 1%;
+    margin-top: 4%;
+    font-weight: 800;
+}
+
+.ctaPointer2 {
+    text-decoration: underline;
+    margin-top:2.2rem;
+    font-size: 1.6rem;
+    color:var(--color-primary);
+    text-align:center;
+}
+
+.ctaPointer3 {
+    text-decoration: underline;
+   
+    color:var(--color-primary)
+}
+
+.how-it{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    margin: 0 auto;
+    width:90%;
+    background-color: var(--color-bg-special);
+
+    padding: 2rem;
+    
+}
+
+.how-it img {
+    width:80%;
+
+}
+
+.how-it ol {
+    width:80%;
+    margin-left: 7%;
+}
+
+
+.solution__card {
+   
+     flex:1;
+     text-align:center;
+   
+}
+
+.solution__card:hover{
+    background:transparent;
+    border-color: var(--color-primary-variant);
+    cursor:default; /*was this even neccessary*/
+
+}
+
+.solution__card__img{
+    object-fit: cover;
+}
+
+.solution__icon {
+    margin:0 auto;
+    width:45px;
+    font-size:1.4rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    color:black;
+    background-color: #FFFFFF;
+}
+
+.solution__card h5 {
+    font-size: 0.95rem;
+}
+
+.solution__card small {
+    font-size:0.7rem;
+    color:var(--color-light);
+}
+
+
+.solution__content  {
+    margin: 0rem;
+    
+}
+/*.solution__content p {
+    margin: 2rem 0 2.6rem;
+    color: var(--color-light);
+}*/
+
+
+.happySleep{
+    width:12rem;
+}
+
+.ctaButton {
+    margin: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ======================== MEDIA QUERIES FOR solution US (MEDIUM DEVICES) ======================*/
+
+@media screen and (max-width:1024px) {
+   
+    .solution__container {
+       grid-template-columns:  1fr;
+       gap: 0;
+    }
+
+     .solution__me {
+        width:50%;
+        margin:2rem auto 4rem;
+     }
+
+     .solution__me-image {
+        border-radius: 2rem;
+        height: 50vh;
+    }
+
+    .solution__me-image-pic{
+        border-radius: 2rem;
+        height: 50vh;
+    }
+
+     .solution__content p {
+        margin: 1rem 0 1.5rem; 
+     }
+
+     .solution__cards {
+        flex-direction: column;
+     }
+
+     .how-it img {
+        width: 120%;
+    
+    }
+   
+   
+    }
+    
+    
+    
+    /* ======================== MEDIA QUERIES FOR solution US (SMALL DEVICES) ======================*/
+    
+    @media screen and (max-width:600px) {
+        
+        .solution__me {
+            width:65%;
+            margin:0 auto 3rem;
+         }
+
+         .solution__message {
+           display: flex;
+           flex-direction: column;
+           gap:1.4rem;
+         }
+
+
+         .solution__me-image {
+            border-radius: 2rem;
+            
+        }
+    
+        .solution__me-image-pic{
+            border-radius: 2rem;
+            height: 60vh;
+        }
+
+        .solution__cards {
+            flex-direction: column;
+         }
+
+
+        .solution__content {
+            text-align:center;
+        }
+
+        .solution__content p{
+            margin: 1.5rem 0;
+        }
+
+      
+.how-it li {
+   padding-top: 2rem;
+}
+        
+     
+
+     }

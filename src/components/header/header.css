@@ -1,0 +1,301 @@
+header {
+   /* height:60vh;*/
+    padding-top: 0rem;
+    overflow:visible;
+}
+
+.header__container {
+    /*text-align: center;*/
+    height:100%; /*120% may affect things later sha just be careful*/
+    position:relative;
+    margin-bottom: 0px;
+
+   
+}
+
+
+
+
+/*.header__intro__problem:before,
+.header__intro__problem:after {
+    content: "";
+    position: absolute;
+
+    height: 6%;
+    width: 8%;
+
+    bottom: 0%;
+}
+
+.header__intro__problem:after {
+    right: -8%;
+
+    border-radius: 0px 0 0px 30px;
+    
+   
+    box-shadow: -30px 0px 0 0 var(--color-primary);
+}*/
+
+.header__intro__problem h1{
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;  
+    margin-top: 80px;
+}
+
+.header__intro__problem img{ /*is THIS BEING USED ?*/
+  width:200px;
+  /*margin-left: 10rem;*/
+}
+
+
+.header__intro__pic{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    
+}
+
+.intro__pic{
+    width: 60%;
+    height:60%;
+    
+}
+
+.headerProblemDesc{
+  /*padding-top:100px;*/
+}
+
+
+.ctaPointer {
+    text-decoration: underline;
+    margin-top:1.2rem;
+    font-size: 1.3rem;
+}
+
+.lightText {
+    font-weight: 100;
+}
+
+/* ================ CTA ===============*/
+.cta {
+    margin-top: 2.5rem;
+    display:flex;
+    gap:1rem; /*you need to add gap to your arsenal, you're still using margins inside flex and that sucks*/
+    justify-content: center;
+
+}
+
+
+/* ================ HEADER SOCIALS ===============*/
+
+.header__socials {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 0.8rem;
+
+    /*this is how we get those funky placements that accentuate a website*/
+    position: absolute;
+    left:0;
+    bottom: 3rem;
+}
+
+/*notice how to do lines and shapes using "after pseudo element*/
+
+.header__socials::after{
+ content:'';
+ width:1px;
+ height:2rem;
+ background: var(--color-primary);
+
+}
+
+
+/* ================ ME ===============*/
+
+.me {
+    background: linear-gradient(var(--color-primary),55% ,transparent);
+    width:24rem; 
+    height:32rem;
+    position:absolute;
+
+    /* this is how you can center an absolute element*/
+    /*normally i used to do top 50% left 50% but i guess it's the same thing*/
+    left:calc(50% - 11rem);
+    
+
+    margin-top:4rem;
+    border-radius:12rem 12rem 0 0;
+    overflow:visible;
+    padding:1rem 1.5rem 1.5rem 1.5rem;
+}
+
+/* ================ SCROLL DOWN ===============*/
+
+.price__tag {
+    position:absolute;
+    right:-20.7rem;
+    bottom:/*42rem*/50%;
+   
+    font-weight:500;
+    font-size:1.1rem;
+}
+
+
+.custom-shape-divider-bottom-1675978817 {
+   
+    position: relative;
+    bottom: 27%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1675978817 svg {
+    position: relative;
+    display: block;
+    width: calc(114% + 1.3px);
+    height: 155px;
+}
+
+.custom-shape-divider-bottom-1675978817 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+
+
+
+
+/* ======================== MEDIA QUERIES FOR HEADER (MEDIUM DEVICES) ======================*/
+
+
+@media screen and (max-width:1200px) {
+    
+    .header__container {
+        flex-direction: column;
+        gap:0rem;
+          
+    }    
+    
+  
+    .header__intro__problem h1{
+        font-size: 1.4rem;
+        padding: 1rem;  
+        width: 65%;
+     }
+
+
+     .header__intro__problem{
+       width: 100%;
+
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        
+       }
+
+   
+
+     
+
+
+
+
+       .intro__pic{
+        width: 70%;
+        height:70%;
+       
+        margin:0 auto;
+    }
+
+  
+    
+    .header__intro__problem img{ /*is THIS BEING USED ?*/
+        display: none;
+      }
+      
+
+
+ .price__tag {
+    display:none;
+ }
+
+
+ .custom-shape-divider-bottom-1675978817 {
+    display: none;
+ }
+
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1044px) {
+   
+ header {
+    /*height:60vh;*/
+    
+ }
+
+ .header__intro__problem h1{
+    width: 85%;
+ }
+
+ .price__tag {
+    display:none;
+ }
+ }
+ 
+ 
+ 
+ /* ======================== MEDIA QUERIES FOR HEADER (SMALL DEVICES) ======================*/
+ 
+ @media screen and (max-width:600px) {
+     
+    header {
+        /*height:90vh;*/
+        /*margin-bottom: 11rem;*/
+       
+        
+     }
+    
+     .header__socials, .scroll__down{
+        display:none;
+     }
+
+
+     .price__tag {
+        display:none;
+     }
+
+    
+    
+
+     .header__intro__problem h1{
+        font-size: 1.2rem;
+        width: 100%;
+     }
+
+
+     .intro__pic{
+       
+        height:100%;
+        width: 100%;
+     }
+
+  }
+
+
+
