@@ -15,17 +15,13 @@ import {isMobile} from 'react-device-detect';
 const App = () => {
   return (
     <>
-    <Nav/>
+    {/*<Nav/>*/}
     <Header />
     <Experience />
     {/*<About />
     <Solution/>*/}
     {/*<Testimonials />
     <Portfolio/>*/}
-    
-   
-    
-
     <Footer/>
     
     
